@@ -1,3 +1,5 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 %packages
 fedora-workstation-repositories
 pciutils

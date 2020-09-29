@@ -1,4 +1,5 @@
 #!/bin/bash
+# Copyright (c) Facebook, Inc. and its affiliates.
 
 DESTDIR=kickstart
 KS=${DESTDIR}/ks.cfg

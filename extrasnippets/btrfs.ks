@@ -1,3 +1,5 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+#
 # with thanks to Jason Edgecombe <jason@rampaginggeek.com>
 # https://www.redhat.com/archives/kickstart-list/2012-October/msg00014.html
 

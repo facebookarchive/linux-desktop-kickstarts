@@ -1,3 +1,5 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+
 install
 rootpw --plaintext fedora
 auth --enableshadow --passalgo=sha512

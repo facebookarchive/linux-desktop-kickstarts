@@ -1,3 +1,5 @@
+# Copyright (c) Facebook, Inc. and its affiliates
+#
 # based on example-minimal
 # https://fedoraproject.org/wiki/QA:Testcase_Kickstart_Http_Server_Ks_Cfg
 # https://fedorapeople.org/groups/qa/kickstarts/example-minimal.ks
