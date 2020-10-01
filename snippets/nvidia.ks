@@ -23,7 +23,7 @@ if $has_nvidia || $is_virtual; then
     rpmfusion-nonfree-nvidia-driver
   echo "Installing proprietary Nvidia driver"
   kver="$(rpm -q kernel --queryformat=%{version}-%{release}.%{arch})"
-  dnf install -y \
+  dnf install -y --nogpgcheck \
     akmod-nvidia \
     kernel-devel-$kver \
     nvidia-settings
