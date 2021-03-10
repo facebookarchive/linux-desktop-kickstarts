@@ -23,4 +23,7 @@ popd >/dev/null
 if [[ "$1" =~ "btrfs" ]]; then
   echo Patching in btrfs configuration
   cat extrasnippets/btrfs.ks >> ${KS}
+elif [[ "$1" =~ "lvm" ]]; then 
+  echo Patching in lvm configuration
+  cat extrasnippets/lvm.ks >> ${KS}
 fi
