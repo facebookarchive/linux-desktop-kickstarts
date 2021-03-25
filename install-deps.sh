@@ -1,4 +1,4 @@
 #!/bin/sh
 # Copyright (c) Facebook, Inc. and its affiliates.
 
-sudo dnf install pykickstart lorax
+sudo dnf -y install pykickstart lorax
