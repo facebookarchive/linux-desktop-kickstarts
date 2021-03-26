@@ -1,0 +1,16 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: fedora:latest
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: |
+            ./install-deps.sh
+      - run:
+          name: Run checks
+          command: |
+            ./test.sh
