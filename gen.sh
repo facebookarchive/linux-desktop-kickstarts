@@ -20,7 +20,7 @@ pushd $(dirname $0) >/dev/null
 mkdir -p ${DESTDIR}
 
 # override kickstart version to use
-VERSION_PREFIX=$(echo $(basename $1) | cut -d- -f1)
+VERSION_PREFIX="$(basename $1 | sed -e 's|^internal_||' | cut -d- -f1)"
 if [[ "${VERSION_PREFIX}" =~ ^f[0-9]+$ ]] || [[ "${VERSION_PREFIX}" =~ ^rhel[0-9]+$ ]];
 then
   VERSION_ARG="--version ${VERSION_PREFIX}"
