@@ -1,5 +1,8 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
 
+# This provides the best UX for workstation deployments
+selinux --permissive
+
 %packages
 @^workstation-product-environment
 # initial-setup-gui
