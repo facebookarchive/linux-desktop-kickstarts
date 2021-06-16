@@ -5,7 +5,6 @@
 # https://fedorapeople.org/groups/qa/kickstarts/example-minimal.ks
 # + https://github.com/rhinstaller/kickstart-tests/blob/master/btrfs-1.ks.in
 # + https://fedoraproject.org/wiki/Changes/SwapOnZRAM
-install
 rootpw --lock
 keyboard --vckeymap=us --xlayouts='us'
 lang en_US.UTF-8
