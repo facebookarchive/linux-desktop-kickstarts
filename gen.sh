@@ -7,7 +7,7 @@ DESTDIR=kickstart
 KS=${DESTDIR}/ks.cfg
 
 print_usage () {
-  echo Usage: $0 ksfile
+  echo Usage: "$0" ksfile
   exit 1
 }
 
@@ -16,19 +16,19 @@ then
   print_usage
 fi
 
-pushd $(dirname $0) >/dev/null
+pushd $(dirname "$0") >/dev/null
 mkdir -p ${DESTDIR}
 
 # override kickstart version to use
-VERSION_PREFIX="$(basename $1 | sed -e 's|^internal_||' | cut -d- -f1)"
+VERSION_PREFIX="$(basename "$1" | sed -e 's|^internal_||' | cut -d- -f1)"
 if [[ "${VERSION_PREFIX}" =~ ^f[0-9]+$ ]] || [[ "${VERSION_PREFIX}" =~ ^rhel[0-9]+$ ]];
 then
   VERSION_ARG="--version ${VERSION_PREFIX}"
 else
   VERSION_ARG=
 fi
-ksflatten ${VERSION_ARG} -c $1 -o ${KS}
-ksvalidator ${VERSION_ARG} ${KS}
+ksflatten "${VERSION_ARG}" -c "$1" -o ${KS}
+ksvalidator "${VERSION_ARG}" ${KS}
 popd >/dev/null
 
 ACTUAL_BASE="$(readlink -f "$1")"
