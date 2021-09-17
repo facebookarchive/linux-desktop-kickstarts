@@ -1,6 +1,5 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
 
-install
 text
 rootpw --lock
 keyboard --vckeymap=us --xlayouts='us'
